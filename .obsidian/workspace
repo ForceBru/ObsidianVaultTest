@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Another note.md",
+            "file": "iSH workflow.md",
             "mode": "preview"
           }
         }
@@ -18,63 +18,80 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b7b465947be59932",
-    "type": "mobile-drawer",
+    "id": "e003e23ebb376261",
+    "type": "split",
     "children": [
       {
-        "id": "e8858022d7ff4f01",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "0879382f4571a225",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "09ef2447cb0874d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1766b417af67dbd6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ed8e8b60cfa5ff44",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "415aad01007f88c5",
-    "type": "mobile-drawer",
+    "id": "68da2738828bed19",
+    "type": "split",
     "children": [
       {
-        "id": "f87e6712baec3644",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "Another note.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "317572302f70cf17",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "acbb7cfa648906f2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "iSH workflow.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "113f52c78108a677",
   "lastOpenFiles": [
-    "Another note.md",
+    "iSH workflow.md",
     "README.md",
-    "Graph.md"
+    "Без названия.md",
+    "Graph.md",
+    "Another note.md"
   ]
 }

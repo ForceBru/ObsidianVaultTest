@@ -1,4 +1,4 @@
-- [iSH](https://ish.app) is a _free_ iOS app that runs real-world [Alpine Linux](https://alpinelinux.org/about/) on your iDevice by emulating an Intel x86 CPU. It can run many native x86 programs (_not_ compiled for iOS!), including Git.
+- [iSH](https://ish.app) is a _free_ and [open-source](https://github.com/ish-app/ish) iOS app that runs real-world [Alpine Linux](https://alpinelinux.org/about/) on your iDevice by emulating an Intel x86 CPU. It can run many native x86 programs (_not_ compiled for iOS!), including Git.
 - It can also [`mount` iOS file providers](https://github.com/ish-app/ish/wiki/Mounting-other-file-providers), which lets you access your local vault in Obsidian.
 
 These features allow you to sync your Obsidian vault with GitHub (private and public) without leaving your iDevice:
