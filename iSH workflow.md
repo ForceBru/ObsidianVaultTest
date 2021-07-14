@@ -22,7 +22,7 @@ Assuming you have an _existing_ repo on GitHub. You can also create the repo rig
 	4. In Obsidian
 		1. Restart Obsidian (might not be necessary)
 		2. Open the file explorer
-			1. Currently (Obsidian 1.0.3) it's empty
+			1. Currently (Obsidian 1.0.3) it's empty (looks like a bug)
 			2. Tap the "Sort" button (the rightmost one, with up/down arrows)
 			3. Select any sorting order you like
 			4. The files should appear
@@ -49,9 +49,9 @@ Assuming you have an _existing_ repo on GitHub. You can also create the repo rig
 				1. It should say something like `Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded` if there is something to be updated
 		3. Actually update from the remote repo: `git pull`
 	2. In Obsidian:
-		1. (Optional) Reload Obsidian
-		2. Go to file explorer
-			1. If you don't see your new notes, do the sort trick again:
-				1. Tap the "Sort" button (the rightmost one, with up/down arrows)
-				2. Select any sorting order you like
-				3. The files should appear
+		1. Go to file explorer
+		2. If you don't see your new notes, do the sort trick again:
+			1. Tap the "Sort" button (the rightmost one, with up/down arrows)
+			2. Select any sorting order you like
+			3. The files should appear
+		3. Updates to _existing_ notes seem to be reflected correctly
