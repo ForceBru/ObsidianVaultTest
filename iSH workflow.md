@@ -39,10 +39,11 @@ These features allow you to sync your Obsidian vault with GitHub (private and pu
 4. To __pull__ changes from GitHub:
 	1. In iSH:
 		1. Change directory to `obsidian` in your home directory: `cd ~/obsidian`
-		2. Bring remote refs up to date: `git remote update`
-		3. Check whether there is stuff to pull: `git status`
-			1. It should say something like `Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded` if there is something to be updated
-		4. Actually update from the remote repo: `git pull`
+		2. (Optional) Check whether there is stuff to pull
+			1. Bring remote refs up to date: `git remote update`
+			2. Check status: `git status`
+				1. It should say something like `Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded` if there is something to be updated
+		3. Actually update from the remote repo: `git pull`
 	2. In Obsidian:
 		1. (Optional) Reload Obsidian
 		2. Go to file explorer
