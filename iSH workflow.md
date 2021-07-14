@@ -9,17 +9,20 @@ Assuming you have an _existing_ repo on GitHub. You can also create the repo rig
 
 1. Create a new empty _local_ vault in Obsidian
 2. In iSH:
-	1. Create a directory called `obsidian` in your home directory by running `cd ~ && mkdir obsidian`.
-	2. Mount your local vault folder into the `obsidian` folder
+	1. _First-time setup_ - install git:
+		1. Update Alpine repos: `apk update`
+		2. Install git: `apk add git`
+	2. Create a directory called `obsidian` in your home directory by running `cd ~ && mkdir obsidian`.
+	3. Mount your local vault folder into the `obsidian` folder
 		1. Run `mount -t ios . obsidian`
 		2. A file picker will show up
 		3. Choose the folder with your local vault
-	3. Clone your git repository into `obsidian`
+	4. Clone your git repository into `obsidian`
 		1. Change directory to `obsidian`: `cd obsidian`
 		2. Delete the `.obsidian` folder: `rm -rf .obsidian`
 		3. `git clone https://github.com/ForceBru/ObsidianVaultTest .` - use your own repository instead. Don't forget the period `.` - [this is what allows you to clone the repo _into the current folder_](https://stackoverflow.com/questions/9864728/how-to-get-git-to-clone-into-current-directory).
 		4. (Optional) Run `ls -a` to see whether your files are there
-	4. In Obsidian
+	5. In Obsidian
 		1. Restart Obsidian (might not be necessary)
 		2. Open the file explorer
 			1. Currently (Obsidian 1.0.3) it's empty (looks like a bug)
