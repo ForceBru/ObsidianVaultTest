@@ -1,7 +1,11 @@
 - [iSH](https://ish.app) is a _free_ and [open-source](https://github.com/ish-app/ish) iOS app that runs real-world [Alpine Linux](https://alpinelinux.org/about/) on your iDevice by emulating an Intel x86 CPU. It can run many native x86 programs (_not_ compiled for iOS!), including Git.
 - It can also [`mount` iOS file providers](https://github.com/ish-app/ish/wiki/Mounting-other-file-providers), which lets you access your local vault in Obsidian.
 
-These features allow you to sync your Obsidian vault with GitHub (private and public) without leaving your iDevice:
+These features allow you to sync your Obsidian vault with GitHub (private and public) without leaving your iDevice.
+
+# Workflow
+
+Assuming you have an _existing_ repo on GitHub. You can also create the repo right from iSH - the `git` command you'll be using is the exact same fully-featured `git` from Alpine Linux.
 
 1. Create a new empty _local_ vault in Obsidian
 2. In iSH:
