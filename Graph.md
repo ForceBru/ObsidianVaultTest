@@ -1,0 +1,1 @@
+The graph is a great tool that lets you see connections between your notes like [[README]] and [[Another note]]
