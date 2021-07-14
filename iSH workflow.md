@@ -20,19 +20,33 @@ These features allow you to sync your Obsidian vault with GitHub (private and pu
 		2. Open the file explorer
 			1. Currently (Obsidian 1.0.3) it's empty
 			2. Tap the "Sort" button (the rightmost one, with up/down arrows)
-				1. Select any sorting order you like
-			3. The files should appear
+			3. Select any sorting order you like
+			4. The files should appear
 		3. Use your Obsidian vault!
-	5. To push your changes, go back to iSH
+3. To __push__ your changes, go back to iSH
+	1. Change directory to `obsidian` in your home directory: `cd ~/obsidian`
+	2. Run `git status` to confirm that there _are_ modified files
+	3. _First-time setup_ - tell git who you are:
+		1. [Set username](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git) for _this_ repository only (or set it globally with a slightly different command): `git config user.name ForceBruMobile`
+		2. [Set e-mail address](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-in-git): `git config user.email "ForceBru@users.noreply.github.com"`
+	4. Add files, commit and push. For example:
+		1. Add _all_ files into the commit: `git add .`
+		2. Commit: `git commit -m "Commit from mobile"`
+		3. Push: `git push`
+			1. This will ask you to enter your username and password
+			2. [Git can use your personal access token to login automatically](https://docs.github.com/en/get-started/getting-started-with-git/why-is-git-always-asking-for-my-password)
+		4. That's it! Take a look at [this example commit from iSH](https://github.com/ForceBru/ObsidianVaultTest/commit/f642c3334a870ca8ab2aa1355528403502433b2b)
+4. To __pull__ changes from GitHub:
+	1. In iSH:
 		1. Change directory to `obsidian` in your home directory: `cd ~/obsidian`
-		2. Run `git status` to confirm that there _are_ modified files
-		3. _First-time setup_ - tell git who you are:
-			1. [Set username](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git) for _this_ repository only (or set it globally with a slightly different command): `git config user.name ForceBruMobile`
-			2. [Set e-mail address](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-in-git): `git config user.email "ForceBru@users.noreply.github.com"`
-		4. Add files, commit and push. For example:
-			1. Add _all_ files into the commit: `git add .`
-			2. Commit: `git commit -m "Commit from mobile"`
-			3. Push: `git push`
-				1. This will ask you to enter your username and password
-				2. [Git can use your personal access token to login automatically](https://docs.github.com/en/get-started/getting-started-with-git/why-is-git-always-asking-for-my-password)
-			4. That's it! Take a look at [this example commit from iSH](https://github.com/ForceBru/ObsidianVaultTest/commit/f642c3334a870ca8ab2aa1355528403502433b2b)
+		2. Bring remote refs up to date: `git remote update`
+		3. Check whether there is stuff to pull: `git status`
+			1. It should say something like `Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded` if there is something to be updated
+		4. Actually update from the remote repo: `git pull`
+	2. In Obsidian:
+		1. (Optional) Reload Obsidian
+		2. Go to file explorer
+			1. If you don't see your new notes, do the sort trick again:
+				1. Tap the "Sort" button (the rightmost one, with up/down arrows)
+				2. Select any sorting order you like
+				3. The files should appear
